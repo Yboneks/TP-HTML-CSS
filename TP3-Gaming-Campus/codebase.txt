@@ -1,0 +1,354 @@
+
+body{
+    min-height: 100vh;
+    font-family: "Monserrat", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+ul li {
+    font-family: "Monserrat Medium";
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    color: blueviolet;
+    border-top : 5px solid blueviolet;
+}
+
+#language {
+    border-radius: 10px;
+    background: rgba(180, 169, 169, 0.425);
+    padding: 4px 6px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px 0;
+}
+
+.main-header{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 223, 223);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.main-header button {
+    text-transform: uppercase;
+    padding: 8px 10px;
+    color: rgb(228, 223, 223);
+    background: rgba(128, 128, 128, 0);
+    border: 1px solid white;
+}
+
+.header-text {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.icon-part {
+    background: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-part-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+.list-icon-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: rgb(228, 223, 223);
+    margin: 20px;
+    padding: 10px;
+}
+
+.list-icon-part h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.list-icon-part p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.list-icon-part button {
+    background: rgb(20, 20, 20);
+    color: rgb(228, 223, 223);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: 1px solid rgb(228, 223, 223);
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.lip-logo {
+    margin-bottom: 20px;
+}
+
+.news-part {
+    background: rgba(230, 228, 228, 0.692);
+}
+
+.header-news {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.left-part {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-part h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: 5px;
+    margin: 5px;
+}
+
+.left-part p {
+    font-weight: bold;
+}
+
+.right-part {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-part button {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgb(20, 20, 20);
+    padding: 10px 20px;
+}
+
+.main-news {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-news-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: space-evenly;
+    gap: 15px;
+    margin: 30px 100px;
+}
+
+.main-news-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 35px;
+    padding: 10px;
+}
+
+.main-news-box .mn-pic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+    box-shadow: 3px -1px 8px 0px #2f2c2c8a;
+}
+
+.main-news-box h4 {
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.main-news-box p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+}
+
+.main-news-box .link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 100px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.contact-list .list h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.list .infos-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+.list h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.list .network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+.contact-medias {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-medias .medias-text h3 {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.contact-medias .medias-text p {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contact-medias .medias-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background: rgb(20, 20, 20);
+    padding: 40px;
+    text-align: center;   
+}
+
+footer h3 {
+    color: rgb(224, 221, 221);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
