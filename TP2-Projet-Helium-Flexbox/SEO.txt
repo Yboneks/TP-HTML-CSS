@@ -1,0 +1,11 @@
+1- Créer du bon contenu
+    - 400 mots par page minimum
+    - Garder un contenu à jour
+    - Ne pas répéter toujours les mêmes choses
+    - Ne pas faire une page d'intro avant le Site
+    - Pas de lien "cliquez ici" "en savoir plus"
+
+2- HTML "seo friendly"
+    - voir HTML Hélium
+
+3- Site rapide (performant)
