@@ -1,0 +1,41 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "s1 s1 s3"
+  "m1 m2 s3"
+  "m1 b2 b2";
+}
+
+div:nth-child(1) {
+  background: yellow;
+  grid-area: s1;
+  padding: 10px;
+  margin: 10px;
+}
+div:nth-child(2) {
+  background: purple;
+  grid-area: s3;
+  padding: 10px;
+  margin: 10px;
+}
+div:nth-child(3) {
+  background: green;
+  grid-area: m2;
+  padding: 10px;
+  margin: 10px;
+}
+div:nth-child(4) {
+  background: red;
+  grid-area: m1;
+  padding: 10px;
+  margin: 10px;
+}
+div:nth-child(5) {
+  background: orchid;
+  grid-area: b2;
+  padding: 10px;
+  margin: 10px;
+}
