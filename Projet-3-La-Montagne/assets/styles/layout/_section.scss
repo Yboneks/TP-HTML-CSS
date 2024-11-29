@@ -1,0 +1,47 @@
+section{
+    background: $white;
+    width: 80%;
+    margin: 50px;
+    padding: 20px;
+
+    div {
+        @include centerChild;
+        flex-direction : column;
+
+        .date {
+            font-family: "Inter";
+            letter-spacing: 1px;
+            color: blue;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-family: "Merriweather", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-family: "Inter";
+            letter-spacing: 1px;
+        }
+
+        .img-large {
+            background-image: url("pic01.jpg") no-repeat center/center;
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
