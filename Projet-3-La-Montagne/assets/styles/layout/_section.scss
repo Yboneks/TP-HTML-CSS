@@ -1,8 +1,10 @@
 section{
     background: $white;
-    width: 80%;
-    margin: 50px;
-    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 75px;
+    margin-right: 75px;
+    margin-left: 75px;
+    padding: 50px;
 
     div {
         @include centerChild;
@@ -26,9 +28,10 @@ section{
         }
 
         .img-large {
-            background-image: url("pic01.jpg") no-repeat center/center;
-            height: 100px;
-            width: 100px;
+            background: url(../images-section/pic01.jpg) no-repeat center/cover;
+            background-position: 1;
+            height: 300px;
+            width: 200px;
         }
     }
 
@@ -42,6 +45,11 @@ section{
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .img-small {
+                height: 250px;
+                width: 250px;
+            }
         }
     }
 }

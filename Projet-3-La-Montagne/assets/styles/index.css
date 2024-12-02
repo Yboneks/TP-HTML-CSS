@@ -32,7 +32,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 50px;
+  margin-top: 75px;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 0;
 }
 header h1 {
   font-size: 5rem;
@@ -61,36 +64,40 @@ header .arrow:hover {
 
 nav {
   display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 30px;
-  padding: 10px;
-  gap: 5px;
+  grid-template-columns: 70% 30%;
+  margin-top: 75px;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 0px;
+  padding: 10px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 100%;
   background: rgba(255, 255, 255, 0.212);
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5px;
 }
 nav ul {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
   text-align: center;
-  padding-right: 50px;
+  justify-items: start;
+  font-size: 0.9rem;
 }
 nav ul {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
-  padding-left: 50px;
 }
 nav li {
   color: rgb(253, 242, 242);
@@ -102,9 +109,11 @@ nav li:hover {
 
 section {
   background: rgb(231, 224, 224);
-  width: 80%;
-  margin: 50px;
-  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 75px;
+  margin-right: 75px;
+  margin-left: 75px;
+  padding: 50px;
 }
 section div {
   display: -webkit-box;
@@ -136,9 +145,10 @@ section div p {
   letter-spacing: 1px;
 }
 section div .img-large {
-  background-image: url("pic01.jpg") no-repeat center/center;
-  height: 100px;
-  width: 100px;
+  background: url(../images-section/pic01.jpg) no-repeat center/cover;
+  background-position: 1;
+  height: 300px;
+  width: 200px;
 }
 section .flex {
   display: -webkit-box;
@@ -153,6 +163,22 @@ section .flex {
   width: 80%;
 }
 section .flex div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .flex div .img-small {
+  height: 250px;
+  width: 250px;
+}
+
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
