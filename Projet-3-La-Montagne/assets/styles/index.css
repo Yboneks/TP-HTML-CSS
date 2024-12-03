@@ -2,6 +2,7 @@ body {
   background: url(../images/bg.jpg) fixed center/cover;
   height: 100vh;
   text-align: center;
+  margin: 10%;
 }
 
 button {
@@ -15,6 +16,15 @@ button {
   margin: 15px;
 }
 
+.form div label {
+  color: rgb(24, 24, 24);
+  font-family: "Merriweather-Light", sans-serif;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +35,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: rgb(231, 224, 224);
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   -webkit-box-orient: vertical;
@@ -108,7 +118,7 @@ nav li:hover {
 }
 
 section {
-  background: rgb(231, 224, 224);
+  background: rgb(255, 255, 255);
   margin-top: 0;
   margin-bottom: 75px;
   margin-right: 75px;
@@ -129,11 +139,12 @@ section div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 20px;
 }
 section div .date {
   font-family: "Inter";
   letter-spacing: 1px;
-  color: blue;
+  color: rgb(24, 24, 24);
 }
 section div h2 {
   font-size: 3rem;
@@ -161,6 +172,7 @@ section .flex {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  padding: 0;
 }
 section .flex div {
   display: -webkit-box;
@@ -172,6 +184,8 @@ section .flex div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 40px;
+  margin: 20px;
 }
 section .flex div .img-small {
   height: 250px;
@@ -182,10 +196,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgb(255, 255, 255);
+  margin: 75px;
+  padding: 50px;
 }/*# sourceMappingURL=index.css.map */

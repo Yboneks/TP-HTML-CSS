@@ -9,11 +9,12 @@ section{
     div {
         @include centerChild;
         flex-direction : column;
+        margin: 20px;
 
         .date {
             font-family: "Inter";
             letter-spacing: 1px;
-            color: blue;
+            color: $black;
         }
 
         h2 {
@@ -40,11 +41,14 @@ section{
         justify-content: space-between;
         align-items: center;
         width: 80%;
+        padding: 0;
 
         div {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0 40px;
+            margin: 20px;
 
             .img-small {
                 height: 250px;

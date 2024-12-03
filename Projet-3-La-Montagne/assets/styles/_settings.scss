@@ -2,7 +2,7 @@
 
 $color1: rgb(138, 132, 132);
 $black: rgb(24, 24, 24);
-$white: rgb(231, 224, 224);
+$white: rgb(255, 255, 255);
 
 // Mixins
 
@@ -17,4 +17,5 @@ body {
     background: url(../images/bg.jpg) fixed center/cover;
     height: 100vh;
     text-align: center;
+    margin: 10%;
 }
