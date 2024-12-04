@@ -16,13 +16,33 @@ button {
   margin: 15px;
 }
 
-.form div label {
-  color: rgb(24, 24, 24);
-  font-family: "Merriweather-Light", sans-serif;
-  text-transform: uppercase;
+.form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.form form div label {
+  color: rgb(24, 24, 24);
+  font-family: "Merriweather-Light", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.form form div input, .form form div textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(138, 132, 132);
+  font-family: "Inter", sans-serif;
+  resize: none;
+}
+.form form div #name, .form form div #email {
+  border-radius: 2px;
+  border: 0.5px solid rgb(138, 132, 132);
 }
 
 header {
@@ -196,13 +216,46 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: rgb(255, 255, 255);
   margin: 75px;
   padding: 50px;
+}
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 50px;
+}
+footer .contact div h4 {
+  color: rgb(24, 24, 24);
+  font-family: "Merriweather-Light", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+footer .contact div p {
+  font-family: "Inter";
+  letter-spacing: 0.5px;
+  padding: 10px;
+  color: rgb(138, 132, 132);
+  font-size: 0.9rem;
 }/*# sourceMappingURL=index.css.map */
