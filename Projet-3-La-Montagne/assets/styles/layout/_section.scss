@@ -4,12 +4,12 @@ section{
     margin-bottom: 75px;
     margin-right: 75px;
     margin-left: 75px;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
 
     div {
         @include centerChild;
         flex-direction : column;
-        margin: 20px;
+        margin: 0 75px 75px 75px;
 
         .date {
             font-family: "Inter";
@@ -26,6 +26,9 @@ section{
         p {
             font-family: "Inter";
             letter-spacing: 1px;
+            line-height: 30px;
+            text-align: center;
+            padding: 0px 75px;
         }
 
         .img-large {
@@ -37,11 +40,9 @@ section{
     }
 
     .flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        padding: 0;
+        @include centerChild;
+        padding: 50px 50px 25px 50px;
+        
 
         div {
             display: flex;

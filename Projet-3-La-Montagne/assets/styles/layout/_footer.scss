@@ -8,12 +8,14 @@ footer {
 
     .contact {
         display: flex;
+        justify-content: center;
         flex-direction: column;
 
-        div {
+        div, .adress, .phone, .mail, .social {
             display: flex;
             justify-content: flex-start;
-            gap: 50px;
+            text-align: left;
+            gap: 10px;
             
             h4 {
                 color: $black;

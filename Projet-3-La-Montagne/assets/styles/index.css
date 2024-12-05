@@ -5,15 +5,16 @@ body {
   margin: 10%;
 }
 
-button {
+button, .button {
   border: 2px solid rgb(24, 24, 24);
   padding: 10px 20px;
   color: rgb(24, 24, 24);
-  font-weight: 800;
+  font-weight: 750;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   margin: 15px;
+  background: none;
 }
 
 .form form {
@@ -26,21 +27,21 @@ button {
           flex-direction: column;
   gap: 15px;
 }
-.form form div label {
+.form form label {
   color: rgb(24, 24, 24);
   font-family: "Merriweather-Light", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 0.9rem;
 }
-.form form div input, .form form div textarea {
+.form form input, .form form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid rgb(138, 132, 132);
   font-family: "Inter", sans-serif;
   resize: none;
 }
-.form form div #name, .form form div #email {
+.form form #name, .form form #email {
   border-radius: 2px;
   border: 0.5px solid rgb(138, 132, 132);
 }
@@ -86,6 +87,8 @@ header .arrow {
   transition: 0.5s;
   color: rgb(187, 187, 187);
   background: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 header .arrow:hover {
   background: rgba(255, 255, 255, 0.377);
@@ -143,7 +146,7 @@ section {
   margin-bottom: 75px;
   margin-right: 75px;
   margin-left: 75px;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
 }
 section div {
   display: -webkit-box;
@@ -159,7 +162,7 @@ section div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px;
+  margin: 0 75px 75px 75px;
 }
 section div .date {
   font-family: "Inter";
@@ -174,6 +177,9 @@ section div h2 {
 section div p {
   font-family: "Inter";
   letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0px 75px;
 }
 section div .img-large {
   background: url(../images-section/pic01.jpg) no-repeat center/cover;
@@ -185,14 +191,13 @@ section .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
-  padding: 0;
+  padding: 50px 50px 25px 50px;
 }
 section .flex div {
   display: -webkit-box;
@@ -230,21 +235,25 @@ footer .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-footer .contact div {
+footer .contact div, footer .contact .adress, footer .contact .phone, footer .contact .mail, footer .contact .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 50px;
+  text-align: left;
+  gap: 10px;
 }
-footer .contact div h4 {
+footer .contact div h4, footer .contact .adress h4, footer .contact .phone h4, footer .contact .mail h4, footer .contact .social h4 {
   color: rgb(24, 24, 24);
   font-family: "Merriweather-Light", sans-serif;
   text-transform: uppercase;
@@ -252,7 +261,7 @@ footer .contact div h4 {
   font-size: 0.9rem;
   padding: 10px;
 }
-footer .contact div p {
+footer .contact div p, footer .contact .adress p, footer .contact .phone p, footer .contact .mail p, footer .contact .social p {
   font-family: "Inter";
   letter-spacing: 0.5px;
   padding: 10px;
